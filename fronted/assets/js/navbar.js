@@ -11,7 +11,7 @@
     tripIdeas: "home.html#ideas",
     about: "home.html#about",
     wishlist: "wishlist.html",
-    login: "login.html",
+    login: "index.html",
     profile: "#profile",
   };
 

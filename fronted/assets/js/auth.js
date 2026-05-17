@@ -4,7 +4,7 @@
 function logout() {
     localStorage.removeItem('smarttrip_token');
     localStorage.removeItem('smarttrip_user');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
