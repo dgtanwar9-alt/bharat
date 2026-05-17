@@ -10,7 +10,7 @@ const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 5050;
-const FRONTEND_DIR = path.join(__dirname, "..");
+const FRONTEND_DIR = path.join(__dirname, "..", "fronted");
 
 /* -------------------- MIDDLEWARE -------------------- */
 
