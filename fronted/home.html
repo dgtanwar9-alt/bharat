@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Trip - India's Premium AI Travel Planner</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cinzel:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+
+<body>
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-v3">
+        <div class="container">
+            <div class="hero-content">
+                <div class="ai-badge">
+                    <i class="fas fa-sparkles"></i> AI POWERED JOURNEYS
+                </div>
+                <h1>Explore <span>India</span><br>Like Never Before</h1>
+                <p>Smartest AI trip planner, best hotels, local food, transport and trending places - all curated for
+                    your perfect journey.</p>
+
+                <div class="hero-tags">
+                    <span><i class="fas fa-robot"></i> AI Itineraries</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Local Insights</span>
+                    <span><i class="fas fa-tag"></i> Best Prices</span>
+                    <span><i class="fas fa-headset"></i> 24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI PLANNER BOX -->
+    <section class="container" id="planner">
+        <div class="planner-card-v3">
+            <div class="planner-header">
+                <div class="p-icon-box">
+                    <i class="fas fa-sparkles"></i>
+                </div>
+                <div class="p-title">
+                    <h3>AI Trip Planner</h3>
+                    <p>Plan your perfect journey across India</p>
+                </div>
+                <div class="p-badge">
+                    <i class="fas fa-sparkles"></i> Smart, Fast & Easy
+                </div>
+            </div>
+
+            <div class="planner-form-grid">
+                <div class="p-input-group">
+                    <label>Where do you want to go?</label>
+                    <div class="p-input">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="cityInput" placeholder="Ex: Manali, Jaipur, Kerala">
+                    </div>
+                </div>
+                <div class="p-input-group">
+                    <label>Travel Dates</label>
+                    <div class="p-input">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="text" placeholder="dd/mm/yyyy" onfocus="(this.type='date')">
+                    </div>
+                </div>
+                <div class="p-input-group">
+                    <label>Travelers</label>
+                    <div class="p-input">
+                        <i class="fas fa-users"></i>
+                        <select id="travelersInput">
+                            <option>1 Travelers</option>
+                            <option>2 Traveler</option>
+                            <option>3 Traveler</option>
+                            <option>Family (4+)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="p-action">
+                    <button class="btn-p-main" onclick="handlePlannerClick()">
+                        <i class="fas fa-sparkles"></i> Plan My Trip
+                    </button>
+                </div>
+            </div>
+
+            <div class="popular-tags" style="margin-top:25px; font-size:13px; color:var(--gray);">
+                <span style="font-weight:700; margin-right:10px;">Trending:</span>
+                <span class="tag" style="cursor:pointer" onclick="selectTag('Jaipur')">Jaipur</span>
+                <span class="tag" style="cursor:pointer" onclick="selectTag('Kerala')">Kerala</span>
+                <span class="tag" style="cursor:pointer" onclick="selectTag('Goa')">Goa</span>
+                <span class="tag" style="cursor:pointer" onclick="selectTag('Ladakh')">Ladakh</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- States Slider -->
+    <section id="states" style="padding: 40px 0;">
+        <div class="container" style="margin-bottom:24px;">
+            <p class="section-label" style="margin:0">✦ All States</p>
+        </div>
+        <div class="states-track-wrap">
+            <div class="states-track" id="statesTrack">
+                <!-- duplicated for infinite scroll -->
+                <div class="state-chip" onclick="location.href='district.html?state=rajasthan'"><span
+                        class="flag">🏰</span>Rajasthan</div>
+                <div class="state-chip" onclick="location.href='district.html?state=goa'"><span
+                        class="flag">🌊</span>Goa</div>
+                <div class="state-chip" onclick="location.href='district.html?state=himachal-pradesh'"><span
+                        class="flag">🏔</span>Himachal Pradesh</div>
+                <div class="state-chip" onclick="location.href='district.html?state=kerala'"><span
+                        class="flag">🌿</span>Kerala</div>
+                <div class="state-chip" onclick="location.href='district.html?state=delhi'"><span
+                        class="flag">🕌</span>Delhi</div>
+                <div class="state-chip" onclick="location.href='district.html?state=uttar-pradesh'"><span
+                        class="flag">🏛</span>Uttar Pradesh</div>
+                <div class="state-chip" onclick="location.href='district.html?state=uttarakhand'"><span
+                        class="flag">🌄</span>Uttarakhand</div>
+                <div class="state-chip" onclick="location.href='district.html?state=maharashtra'"><span
+                        class="flag">🎭</span>Maharashtra</div>
+                <div class="state-chip" onclick="location.href='district.html?state=madhya-pradesh'"><span
+                        class="flag">🐅</span>Madhya Pradesh</div>
+                <div class="state-chip" onclick="location.href='district.html?state=tamil-nadu'"><span
+                        class="flag">⛩</span>Tamil Nadu</div>
+                <div class="state-chip" onclick="location.href='district.html?state=karnataka'"><span
+                        class="flag">🌺</span>Karnataka</div>
+                <div class="state-chip" onclick="location.href='district.html?state=gujarat'"><span
+                        class="flag">🎨</span>Gujarat</div>
+                <div class="state-chip" onclick="location.href='district.html?state=jammu-and-kashmir'"><span
+                        class="flag">❄</span>Jammu & Kashmir</div>
+                <div class="state-chip" onclick="location.href='district.html?state=assam'"><span
+                        class="flag">🍵</span>Assam</div>
+                <div class="state-chip" onclick="location.href='district.html?state=andhra-pradesh'"><span
+                        class="flag">🔥</span>Andhra Pradesh</div>
+                <!-- Duplicate for seamless loop -->
+                <div class="state-chip" onclick="location.href='district.html?state=rajasthan'"><span
+                        class="flag">🏰</span>Rajasthan</div>
+                <div class="state-chip" onclick="location.href='district.html?state=goa'"><span
+                        class="flag">🌊</span>Goa</div>
+                <div class="state-chip" onclick="location.href='district.html?state=himachal-pradesh'"><span
+                        class="flag">🏔</span>Himachal Pradesh</div>
+                <div class="state-chip" onclick="location.href='district.html?state=kerala'"><span
+                        class="flag">🌿</span>Kerala</div>
+                <div class="state-chip" onclick="location.href='district.html?state=delhi'"><span
+                        class="flag">🕌</span>Delhi</div>
+                <div class="state-chip" onclick="location.href='district.html?state=uttar-pradesh'"><span
+                        class="flag">🏛</span>Uttar Pradesh</div>
+                <div class="state-chip" onclick="location.href='district.html?state=uttarakhand'"><span
+                        class="flag">🌄</span>Uttarakhand</div>
+                <div class="state-chip" onclick="location.href='district.html?state=maharashtra'"><span
+                        class="flag">🎭</span>Maharashtra</div>
+                <div class="state-chip" onclick="location.href='district.html?state=madhya-pradesh'"><span
+                        class="flag">🐅</span>Madhya Pradesh</div>
+                <div class="state-chip" onclick="location.href='district.html?state=tamil-nadu'"><span
+                        class="flag">⛩</span>Tamil Nadu</div>
+                <div class="state-chip" onclick="location.href='district.html?state=karnataka'"><span
+                        class="flag">🌺</span>Karnataka</div>
+                <div class="state-chip" onclick="location.href='district.html?state=gujarat'"><span
+                        class="flag">🎨</span>Gujarat</div>
+                <div class="state-chip" onclick="location.href='district.html?state=jammu-and-kashmir'"><span
+                        class="flag">❄</span>Jammu & Kashmir</div>
+                <div class="state-chip" onclick="location.href='district.html?state=assam'"><span
+                        class="flag">🍵</span>Assam</div>
+                <div class="state-chip" onclick="location.href='district.html?state=andhra-pradesh'"><span
+                        class="flag">🔥</span>Andhra Pradesh</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- POPULAR DESTINATIONS -->
+    <section class="container" id="destinations" style="margin-top:80px;">
+        <div class="section-title-row">
+            <div>
+                <h2 style="font-size: 28px; font-weight: 800;">Popular Destinations</h2>
+                <p style="color:var(--gray); font-size:15px;">Discover the most visited states of India</p>
+            </div>
+            <button class="btn-outline"
+                style="padding:10px 24px; border:1px solid #e5e7eb; border-radius:12px; background:white; cursor:pointer; font-weight:600;"
+                onclick="location.href='#states'">Explore All States</button>
+        </div>
+        <div class="dest-grid-row" id="states-grid">
+            <!-- Popular state cards home.js se dynamically render honge -->
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="container why-section" style="margin: 100px auto;">
+        <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 10px;">Why Choose Smart Trip?</h2>
+        <p style="color:var(--gray); margin-bottom: 50px;">The smarter way to travel in India</p>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="icon"
+                    style="width:60px; height:60px; background:#eef2ff; border-radius:14px; display:flex; align-items:center; justify-content:center; color:#6366f1; font-size:24px; margin-bottom:20px;">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h4>AI Powered</h4>
+                <p>Personalized itineraries based on your budget and preferences.</p>
+            </div>
+            <div class="why-item">
+                <div class="icon"
+                    style="width:60px; height:60px; background:#fff7ed; border-radius:14px; display:flex; align-items:center; justify-content:center; color:#f59e0b; font-size:24px; margin-bottom:20px;">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <h4>100% India</h4>
+                <p>Deep local knowledge across every corner of Incredible India.</p>
+            </div>
+            <div class="why-item">
+                <div class="icon"
+                    style="width:60px; height:60px; background:#f0fdf4; border-radius:14px; display:flex; align-items:center; justify-content:center; color:#22c55e; font-size:24px; margin-bottom:20px;">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <h4>Handpicked</h4>
+                <p>Only the best hotels, food and transport recommended for you.</p>
+            </div>
+            <div class="why-item">
+                <div class="icon"
+                    style="width:60px; height:60px; background:#fef2f2; border-radius:14px; display:flex; align-items:center; justify-content:center; color:#ef4444; font-size:24px; margin-bottom:20px;">
+                    <i class="fas fa-bookmark"></i>
+                </div>
+                <h4>Save & Plan</h4>
+                <p>Save your favorite trips and plan later with your friends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE BANNER -->
+    <section class="container" style="margin-bottom: 100px;">
+        <div class="explore-banner">
+            <div class="banner-text">
+                <h2 style="font-size: 32px; font-weight: 800;">India is Beautiful.<br>Let's Explore Together! 🇮🇳</h2>
+                <p style="margin-top:15px; opacity: 0.9;">Plan your first AI-powered trip today.</p>
+            </div>
+            <button class="btn-primary"
+                style="background:white; color:#0f172a; padding:16px 32px; border-radius:14px; font-weight:700;"
+                onclick="window.scrollTo({top:0, behavior:'smooth'})">Get Started Now</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <h2 class="logo"><i class="fas fa-suitcase"></i> Smart Trip</h2>
+                    <p style="color:rgba(255,255,255,0.6); font-size:14px; margin-top:15px;">Making Indian tourism
+                        smarter, faster, and more accessible for everyone.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li>Top States</li>
+                        <li>AI Planner</li>
+                        <li>Local Food</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Contact Us</li>
+                        <li>Partner with Us</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/@dillagurjar" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/D-G-Tanwar/100055492578687/?locale=zh_CN#"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@dgtanwar9" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/dgtanwar9" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="text-align:center; padding-top:40px; border-top:1px solid rgba(255,255,255,0.1); color:rgba(255,255,255,0.4); font-size:13px;">
+                © 2025 Smart Trip. All rights reserved. Designed with ❤️ for India.
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/api.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+/* ============================================================
+       TRENDING DESTINATIONS
+    ============================================================ */
+    /* SECTION: Trending Destinations */
+/* =========================================================
+   DESTINATIONS SECTION
+========================================================= */
+
+#destinations{
+    position:relative;
+
+    padding:140px 0;
+
+    background:
+    radial-gradient(circle at top left, rgba(212,168,83,0.08), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(0,180,255,0.06), transparent 30%),
+    linear-gradient(180deg,#05070d 0%,#0a0f18 100%);
+
+    overflow:hidden;
+}
+
+
+/* CONTAINER */
+
+.container{
+    width:min(92%,1400px);
+    margin:auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.section-header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.section-label{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 24px;
+
+    border:1px solid rgba(212,168,83,0.22);
+    border-radius:100px;
+
+    background:rgba(255,255,255,0.03);
+
+    color:#d4a853;
+
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    backdrop-filter:blur(10px);
+}
+
+.section-title{
+    margin-top:28px;
+
+    color:#f5f5f5;
+
+    font-size:72px;
+    font-weight:800;
+    line-height:1.1;
+
+    letter-spacing:-2px;
+}
+
+.section-title span{
+    color:#d4a853;
+}
+
+.gold-line{
+    width:120px;
+    height:5px;
+
+    margin:28px auto;
+
+    border-radius:100px;
+
+    background:linear-gradient(90deg,#8a6527,#d4a853,#f3d08f);
+
+    box-shadow:0 0 25px rgba(212,168,83,0.45);
+}
+
+.section-sub{
+    width:min(760px,100%);
+    margin:auto;
+
+    color:#a4a9b6;
+
+    font-size:20px;
+    line-height:1.9;
+    font-weight:400;
+}
+
+
+/* =========================================================
+   DESTINATION GRID
+========================================================= */
+
+.dest-grid{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+
+    gap:34px;
+}
+
+
+/* =========================================================
+   DESTINATION CARD
+========================================================= */
+
+.dest-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.dest-card{
+    position:relative;
+
+    height:470px;
+
+    border-radius:34px;
+
+    overflow:hidden;
+
+    background:#0e1522;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 15px 50px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+
+    transition:
+    transform 0.5s cubic-bezier(.19,1,.22,1),
+    box-shadow 0.5s ease,
+    border-color 0.5s ease;
+
+    isolation:isolate;
+}
+
+.dest-card:hover{
+    transform:translateY(-12px);
+
+    border-color:rgba(212,168,83,0.4);
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,0.65),
+    0 0 0 1px rgba(212,168,83,0.12);
+}
+
+
+/* IMAGE */
+
+.dest-img{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:120px;
+
+    position:relative;
+
+    transition:transform 0.8s ease;
+}
+
+.dest-card:hover .dest-img{
+    transform:scale(1.08);
+}
+
+
+/* IMAGE GRADIENTS */
+
+.grad-jaipur{
+    background:
+    linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)),
+    url('https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1200&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.grad-goa{
+    background:
+    linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.grad-delhi{
+    background:
+    linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)),
+    url('https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1200&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.grad-shimla{
+    background:
+    linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.grad-varanasi{
+    background:
+    linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)),
+    url('https://images.unsplash.com/photo-1561361513-2d000a50f0dc?q=80&w=1200&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+}
+
+
+/* OVERLAY */
+
+.dest-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(0,0,0,0.02) 0%,
+        rgba(0,0,0,0.22) 35%,
+        rgba(0,0,0,0.92) 100%
+    );
+
+    z-index:1;
+
+    pointer-events:none;
+}
+
+
+/* CONTENT */
+
+.dest-content{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+
+    z-index:2;
+
+    padding:34px;
+}
+
+.dest-state{
+    display:inline-flex;
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:100px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    color:#d4a853;
+
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+.dest-name{
+    margin-top:18px;
+
+    color:#fff;
+
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:-1px;
+}
+
+.dest-meta{
+    margin-top:22px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.dest-rating{
+    color:#d6d8df;
+
+    font-size:16px;
+    font-weight:500;
+}
+
+.dest-tag{
+    padding:10px 18px;
+
+    border-radius:100px;
+
+    background:#d4a853;
+
+    color:#111;
+
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+.reveal{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:992px){
+
+    #destinations{
+        padding:110px 0;
+    }
+
+    .section-title{
+        font-size:54px;
+    }
+
+    .section-sub{
+        font-size:18px;
+    }
+
+    .dest-card{
+        height:420px;
+    }
+
+    .dest-name{
+        font-size:34px;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .section-header{
+        margin-bottom:60px;
+    }
+
+    .section-title{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .section-sub{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .dest-grid{
+        gap:24px;
+    }
+
+    .dest-card{
+        height:360px;
+        border-radius:24px;
+    }
+
+    .dest-content{
+        padding:24px;
+    }
+
+    .dest-name{
+        font-size:30px;
+    }
+
+    .dest-rating{
+        font-size:14px;
+    }
+
+    .dest-tag{
+        font-size:11px;
+        padding:8px 14px;
+    }
+
+}
