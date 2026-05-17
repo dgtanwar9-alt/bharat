@@ -1,7 +1,7 @@
 const express = require("express");
 
 const router = express.Router();
-const cityGuides = require("../../js/cityData");
+const cityGuides = require("../../fronted/js/cityData");
 
 function normalizeLookupToken(value) {
   return decodeURIComponent(String(value || "").trim().toLowerCase())

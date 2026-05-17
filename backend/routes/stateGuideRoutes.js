@@ -1,7 +1,7 @@
 const express = require("express");
 
 const router = express.Router();
-const stateGuides = require("../../assets/js/district");
+const stateGuides = require("../../fronted/assets/js/district");
 
 function normalizeStateKey(value) {
   if (!value) return "rajasthan";
