@@ -7,6 +7,9 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
+const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
+const mongoSanitize = require("express-mongo-sanitize");
 
 const app = express();
 const PORT = process.env.PORT || 5050;
@@ -14,13 +17,34 @@ const FRONTEND_DIR = path.join(__dirname, "..", "fronted");
 
 /* -------------------- MIDDLEWARE -------------------- */
 
+// Security middleware
+app.use(helmet());
+
+// Rate limiter for API endpoints
+const apiLimiter = rateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: 120,
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+// Apply CORS with configurable origins (allow local dev)
+const allowedOrigins = (process.env.CORS_ORIGIN || "https://bharat-api-flax.vercel.app, http://localhost:3000").split(/,\s*/);
 app.use(cors({
-  origin: "*",
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      return callback(null, true);
+    }
+    return callback(new Error("CORS policy: This origin is not allowed."));
+  },
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
-app.use(express.json());
+app.use(express.json({ limit: '1mb' }));
+app.use(mongoSanitize());
+app.use(apiLimiter);
 
 /* -------------------- DATABASE -------------------- */
 
@@ -102,7 +126,7 @@ app.use("/api/chat", chatRoutes);
 const newsletterSubscribers = [];
 
 app.post("/api/newsletter", (req, res) => {
-  const { email } = req.body;
+  const { email } = req.body || {};
   const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!email || !emailReg.test(email)) {
@@ -120,13 +144,17 @@ app.post("/api/newsletter", (req, res) => {
 /* -------------------- CONTACT ENDPOINT -------------------- */
 
 app.post("/api/contact", (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, message } = req.body || {};
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: "All fields are required." });
   }
 
-  console.log(`📩 Contact: ${name} (${email}): ${message}`);
+  // Minimal logging in production
+  if (process.env.NODE_ENV !== 'production') {
+    console.log(`📩 Contact: ${name} (${email}): ${message}`);
+  }
+
   return res.json({ message: "Message received! We will get back to you soon." });
 });
 
@@ -174,7 +202,8 @@ app.get("/district", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(FRONTEND_DIR, "login.html"));
+  // login now served by index.html in frontend
+  res.sendFile(path.join(FRONTEND_DIR, "index.html"));
 });
 
 app.get("/home.html", (req, res) => {
@@ -190,7 +219,14 @@ app.get("/district.html", (req, res) => {
 });
 
 app.get("/login.html", (req, res) => {
-  res.sendFile(path.join(FRONTEND_DIR, "login.html"));
+  res.sendFile(path.join(FRONTEND_DIR, "index.html"));
+});
+
+// Fallback error handler — hide stack traces in production
+app.use(function (err, req, res, next) {
+  console.error(err && err.stack ? err.stack : err);
+  var message = process.env.NODE_ENV === 'production' ? 'Internal server error' : (err && err.message) || 'Internal server error';
+  res.status(err && err.status ? err.status : 500).json({ error: message });
 });
 
 /* -------------------- START SERVER -------------------- */

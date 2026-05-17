@@ -109,7 +109,7 @@
   // Har state ke liye same UI structure generate karne wala reusable template.
   const createStateCard = ({ name, slug, tagline, imageUrl }) => `
     <div class="dest-card-v2" data-url="district.html?state=${slug}" role="link" tabindex="0">
-      <img src="${imageUrl}" alt="${name}">
+      <img loading="lazy" decoding="async" src="${imageUrl}" alt="${name}" width="520" height="320">
       <div class="overlay">
         <h4>${name}</h4>
         <p>${tagline}</p>

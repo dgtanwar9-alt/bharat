@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bharat-api-flax.vercel.app/sitemap.xml

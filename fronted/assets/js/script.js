@@ -27,6 +27,19 @@
     });
   }
 
+  function attachLazyImageListeners() {
+    if (!('IntersectionObserver' in window)) return;
+    var imgs = document.querySelectorAll('img[loading="lazy"]');
+    imgs.forEach(function(img){
+      if (img.complete) {
+        img.classList.add('loaded');
+        return;
+      }
+      img.addEventListener('load', function(){ img.classList.add('loaded'); });
+      img.addEventListener('error', function(){ img.classList.add('loaded'); });
+    });
+  }
+
   function normalizePlannerCity(value) {
     return encodeURIComponent(String(value || "").trim());
   }
@@ -96,6 +109,7 @@
   function init() {
     initRevealObserver();
     loadDeals();
+    attachLazyImageListeners();
   }
 
   window.handlePlannerClick = handlePlannerClick;

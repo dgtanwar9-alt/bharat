@@ -118,6 +118,22 @@ body {
 
 .hero-tags i { color: #fbbf24; }
 
+/* Performance & UX improvements */
+img[loading="lazy"] {
+    opacity: 0;
+    transform: scale(1.02);
+    transition: opacity 360ms ease, transform 360ms ease;
+}
+img[loading="lazy"].loaded {
+    opacity: 1;
+    transform: none;
+}
+
+.btn-loading {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
 .attractions-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
