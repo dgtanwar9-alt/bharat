@@ -116,4 +116,15 @@
   window.selectTag = selectTag;
 
   document.addEventListener("DOMContentLoaded", init);
+  document.addEventListener("click", function (event) {
+    var toggle = event.target.closest(".footer-toggle");
+    if (!toggle) return;
+
+    var parent = toggle.closest(".footer-item");
+    if (!parent) return;
+
+    parent.classList.toggle("active");
+  });
+
+
 })();

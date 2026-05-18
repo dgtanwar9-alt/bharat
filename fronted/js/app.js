@@ -1181,8 +1181,6 @@ async function handleRootChange(event) {
 // 3. build full page HTML
 // 4. restore planner state
 async function renderCityView(cityKey, plannerState = null, options = {}) {
-  await hydrateCityDataFromApi();
-
   const normalizedKey = normalizeCityKey(cityKey) || getDefaultCityKey();
   const city = cityData[normalizedKey];
   const cityRoot = document.getElementById('city-root');
@@ -1223,10 +1221,10 @@ async function renderCityView(cityKey, plannerState = null, options = {}) {
 async function initCityPage() {
   injectRuntimeStyles();
   bindShellEvents();
-  await hydrateCityDataFromApi();
 
   const requestedCityKey = normalizeCityKey(getUrlParam('city')) || getDefaultCityKey();
   await renderCityView(requestedCityKey, null, { autoGenerateFromUrl: true });
+  hydrateCityDataFromApi();
 }
 
 window.closeMobileMenu = closeMobileMenu;

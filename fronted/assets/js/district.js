@@ -12,12 +12,17 @@ const districtStates = {
             { 
   name: 'Jaipur',
   img: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Lake City with royal palaces and stunning lakes.'
+  desc: 'Pink City famous for forts, bazaars and royal landmarks.'
+},
+{ 
+  name: 'Udaipur',
+  img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1200&auto=format&fit=crop',
+  desc: 'Lake City known for palaces, boat rides and sunset views.'
 },
 { 
   name: 'Ajmer',
   img: 'https://media.istockphoto.com/id/1140660972/photo/panoramic-view-on-holy-lake-and-city-pushkar-rajasthan-india.jpg?s=1024x1024&w=is&k=20&c=DtEsNNHghdWBoqOHfi39SOFFcQBVMcvdCbau4Yzwtgs=',
-  desc: 'Golden city, desert forts and camel safaris.'
+  desc: 'Spiritual center with Dargah Sharif and Ana Sagar Lake.'
 },
 { 
   name: 'Jodhpur',
@@ -48,13 +53,7 @@ const districtStates = {
 { 
   name: 'Bikaner',
   img: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Desert city famous for palaces and camel festival.'
-},
-
-{ 
-  name: 'Ajmer',
-  img: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Spiritual center with Dargah Sharif and Ana Sagar Lake.'
+  desc: 'Desert city known for Junagarh Fort, bhujia and camel culture.'
 }   ],
         morePlaces: [
             { 
@@ -78,43 +77,7 @@ const districtStates = {
 { 
   name: 'Neemrana',
   img: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Fort palace stay near Delhi for weekend escapes.'
-},
-
-{ 
-  name: 'Amber Fort',
-  img: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Iconic hill fort above Jaipur with light shows.'
-},
-
-{ 
-  name: 'Hawa Mahal',
-  img: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Famous palace of winds in Jaipur Old City.'
-},
-
-{ 
-  name: 'Lake Pichola',
-  img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Romantic lake with boat rides in Udaipur.'
-},
-
-{ 
-  name: 'City Palace',
-  img: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Grand royal complex in Jaipur and Udaipur.'
-},
-
-{ 
-  name: 'Mehrangarh Fort',
-  img: 'https://plus.unsplash.com/premium_photo-1697730388194-0f8f7943dbad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  desc: 'Magnificent fort with panoramic views of Jodhpur.'
-},
-
-{ 
-  name: 'Bhangarh Fort',
-  img: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=1200&auto=format&fit=crop',
-  desc: 'Mysterious ruined fort often called India most haunted place.'
+  desc: 'Fort palace stay near Delhi for weekend heritage escapes.'
 }    ]
     },
 
@@ -294,20 +257,21 @@ async function getStateData() {
     const urlParams = new URLSearchParams(window.location.search);
     const rawState = urlParams.get('state');
     const stateKey = normalizeStateKey(rawState);
+    const fallbackData = districtStates[stateKey] || createFallbackState(rawState);
 
     if (window.smartTripApi) {
-        try {
-            const response = await window.smartTripApi.getJson(`/api/states/${encodeURIComponent(stateKey)}`);
-            if (response && response.data) {
-                districtStates[stateKey] = response.data;
-                return response.data;
-            }
-        } catch (error) {
-            console.warn('State guide API fallback used for:', stateKey, error.message);
-        }
+        window.smartTripApi.getJson(`/api/states/${encodeURIComponent(stateKey)}`)
+            .then(response => {
+                if (response && response.data) {
+                    districtStates[stateKey] = response.data;
+                }
+            })
+            .catch(error => {
+                console.warn('State guide API fallback used for:', stateKey, error.message);
+            });
     }
 
-    return districtStates[stateKey] || createFallbackState(rawState);
+    return fallbackData;
 }
 
 async function renderDistrictPage() {

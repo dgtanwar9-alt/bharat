@@ -165,4 +165,11 @@
   }
 
   initStateCards();
+
+
+/* IMPORTANT */
+if (typeof window.initStateCards === "function") {
+  window.initStateCards();
+}
+
 })();

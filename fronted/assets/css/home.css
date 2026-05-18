@@ -1,5 +1,6 @@
 
 @import url('navbar.css');
+@import url('footer.css');
 :root {
   --primary: #5c59f0;
   --secondary: #f4a261;
@@ -440,50 +441,3 @@ img[loading="lazy"].loaded {
   color: white;
 }
 
-/* FOOTER */
-.footer-logo img{
-    width:55px;
-    height:55px;
-    object-fit:contain;
-    display:block;
-}
-
-footer {
-  background: #0a0a12;
-  padding: 80px 0 40px;
-  color: white;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
-  gap: 40px;
-  margin-bottom: 60px;
-}
-
-.footer-col h4 { margin-bottom: 25px; font-size: 18px; font-weight: 700; color: var(--gold); }
-.footer-col ul { list-style: none; }
-.footer-col li { margin-bottom: 12px; color: rgba(255,255,255,0.6); font-size: 14px; cursor: pointer; transition: 0.3s; }
-.footer-col li:hover { color: var(--gold); }
-
-.social-links { display: flex; gap: 20px; font-size: 22px; color: var(--gold); }
-
-/* RESPONSIVE */
-@media (max-width: 1200px) {
-    .dest-grid-row { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 1024px) {
-    .planner-form-grid { grid-template-columns: 1fr 1fr; }
-    .hero-tags { display: none; }
-    .why-grid { grid-template-columns: repeat(2, 1fr); }
-    .attractions-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 768px) {
-    .planner-form-grid { grid-template-columns: 1fr; }
-    .dest-grid-row { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
-    .explore-banner { flex-direction: column; text-align: center; gap: 30px; padding: 40px; }
-    .attractions-grid { grid-template-columns: 1fr; }
-}
