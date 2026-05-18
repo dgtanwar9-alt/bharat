@@ -2,7 +2,7 @@
   "name": "smarttrip-clean",
   "version": "1.0.0",
   "private": true,
-  "description": "Smart Trip frontend and backend in a single deploy-ready project",
+  "description": "Bharat Guide frontend and backend in a single deploy-ready project",
   "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
@@ -16,4 +16,3 @@
     "mongoose": "^8.5.1"
   }
 }
-

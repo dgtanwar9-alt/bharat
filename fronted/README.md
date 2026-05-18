@@ -1,6 +1,6 @@
-# Smart Trip Clean
+# Bharat Guide Clean
 
-Smart Trip is now structured as a single project that serves:
+Bharat Guide is now structured as a single project that serves:
 
 - static frontend pages from the repo root
 - Express API from `backend/`
@@ -67,4 +67,3 @@ Static pages are served by Express, so you do not need a separate frontend hosti
 - `GET /api/places`
 - `GET /api/reviews`
 - `POST /api/chat`
-

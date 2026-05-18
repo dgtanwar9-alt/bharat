@@ -1,5 +1,5 @@
 /* ============================================================
-   SMART TRIP – BACKEND SERVER
+   BHARAT GUIDE – BACKEND SERVER
    ============================================================ */
 
 require("dotenv").config();
@@ -163,7 +163,7 @@ app.post("/api/contact", (req, res) => {
 app.get("/api/health", (req, res) => {
   res.json({
     status: "ok",
-    name: "Smart Trip Backend API",
+    name: "Bharat Guide Backend API",
     version: "1.0.0",
     endpoints: {
       hotels: "/api/hotels",
@@ -232,6 +232,6 @@ app.use(function (err, req, res, next) {
 /* -------------------- START SERVER -------------------- */
 
 app.listen(PORT, () => {
-  console.log(`\n🚀 Smart Trip Backend running on http://localhost:${PORT}`);
+  console.log(`\n🚀 Bharat Guide Backend running on http://localhost:${PORT}`);
   console.log("   Mode: auto (MongoDB with memory fallback)\n");
 });

@@ -29,7 +29,7 @@
 
     if (title) title.textContent = isSignup ? "Create Account" : "Welcome Back!";
     if (subtitle) subtitle.textContent = isSignup
-      ? "Create your Smart Trip account to save your travel journey"
+      ? "Create your Bharat Guide account to save your travel journey"
       : "Login to continue your journey";
     if (submitLabel) submitLabel.textContent = isSignup ? "Create Account" : "Login";
     if (nameGroup) {
@@ -39,7 +39,7 @@
         nameInput.required = isSignup;
       }
     }
-    if (toggleTitle) toggleTitle.textContent = isSignup ? "Already have an account?" : "New to Smart Trip?";
+    if (toggleTitle) toggleTitle.textContent = isSignup ? "Already have an account?" : "New to Bharat Guide?";
     if (toggleCopy) toggleCopy.textContent = isSignup
       ? "Switch back to login and continue planning your trip."
       : "Create an account and start planning your perfect trip.";

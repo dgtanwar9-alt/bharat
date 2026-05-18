@@ -44,14 +44,14 @@
       slug: "delhi",
       tagline: "Capital Culture",
       imageUrl:
-        "https://images.unsplash.com/photo-1549194384-1b6ebfebd079?q=80&w=1000&auto=format&fit=crop",
+        "https://cdn.pixabay.com/photo/2020/02/02/17/24/travel-4813658_640.jpg",
     },
     {
       name: "Maharashtra",
       slug: "maharashtra",
       tagline: "Gateway to India",
       imageUrl:
-        "https://images.unsplash.com/photo-1526481280691-3bfa7568e43b?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1695211564991-9cf8f7a1d799?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1haGFyYXNodHJhfGVufDB8fDB8fHww",
     },
     {
       name: "Uttar Pradesh",
@@ -72,35 +72,35 @@
       slug: "tamil-nadu",
       tagline: "Temple Trails",
       imageUrl:
-        "https://images.unsplash.com/photo-1526481280691-3bfa7568e43b?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1544588440-fc7551331160?q=80&w=2422&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Karnataka",
       slug: "karnataka",
       tagline: "Coast & Hills",
       imageUrl:
-        "https://images.unsplash.com/photo-1504803540668-681d2d1a9d80?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1694011772133-dc4b3ff3f24f?q=80&w=1957&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Gujarat",
       slug: "gujarat",
       tagline: "Cultural Heritage",
       imageUrl:
-        "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1719139962223-f62b591aee2c?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Assam",
       slug: "assam",
       tagline: "Tea Garden Trails",
       imageUrl:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1759738096744-853e689cfe66?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Andhra Pradesh",
       slug: "andhra-pradesh",
       tagline: "Temple & Coast",
       imageUrl:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?q=80&w=2308&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 

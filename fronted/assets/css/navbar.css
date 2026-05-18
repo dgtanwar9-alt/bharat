@@ -74,6 +74,23 @@
   align-items: center;
   gap: 14px;
 }
+.st-nav__brand-icon{
+    width:48px;
+    height:48px;
+    border-radius:14px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,0.08);
+}
+
+.st-nav__brand-icon img{
+    width:38px;
+    height:38px;
+    object-fit:contain;
+    display:block;
+}
 
 .st-nav__center {
   display: flex;

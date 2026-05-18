@@ -1,5 +1,5 @@
 /*
- * Smart Trip - City Page Renderer
+ * Bharat Guide - City Page Renderer
  * The page shell lives in city.html and each city is rendered from cityData.js.
  *
  * IMPORTANT:
@@ -462,7 +462,7 @@ function createHeroSection(city) {
         <div class="hero-content reveal">
           <div class="ai-badge">
             <i class="fas fa-location-dot"></i>
-            ${escapeHtml(city.state || 'India')} · Smart Trip Guide
+            ${escapeHtml(city.state || 'India')} · Bharat Guide
           </div>
           <h1 id="city-name">Discover <span>${escapeHtml(city.name)}</span></h1>
           <p id="city-desc">${escapeHtml(city.description || '')}</p>
@@ -866,7 +866,7 @@ function createUnavailableCityTemplate(cityKey) {
         <div class="hero-content reveal">
           <div class="ai-badge">
             <i class="fas fa-compass"></i>
-            Smart Trip City Setup
+            Bharat Guide City Setup
           </div>
           <h1>${escapeHtml(label)} <span>Guide Coming Soon</span></h1>
           <p>This destination guide is still being prepared. You can open another available city guide or go back to the main site.</p>
@@ -1200,14 +1200,14 @@ async function renderCityView(cityKey, plannerState = null, options = {}) {
 
   if (!city) {
     cityRoot.innerHTML = createUnavailableCityTemplate(normalizedKey);
-    document.title = `${humanizeKey(normalizedKey)} | Smart Trip`;
+    document.title = `${humanizeKey(normalizedKey)} | Bharat Guide`;
     observeReveals(cityRoot);
     closeMobileMenu();
     return;
   }
 
   cityRoot.innerHTML = buildCityPage(city, normalizedKey);
-  document.title = `${city.name} | Smart Trip`;
+  document.title = `${city.name} | Bharat Guide`;
 
   if (plannerState) {
     applyPlannerState(plannerState);

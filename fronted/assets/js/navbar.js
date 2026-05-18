@@ -101,7 +101,7 @@
       : DEFAULT_MENU_ITEMS;
 
     return {
-      brandName: toText(incoming.brandName, "Smart Trip"),
+      brandName: toText(incoming.brandName, "Bharat Guide"),
       brandTagline: toText(incoming.brandTagline, "Travel India Smartly"),
       brandHref: toText(incoming.brandHref, links.home),
       links: links,
@@ -208,8 +208,7 @@
       '          <span class="st-nav__menu-icon"></span>',
       "        </button>",
       '        <a class="st-nav__brand" href="' + escapeHtml(state.config.brandHref) + '">',
-      '          <span class="st-nav__brand-icon"><i class="fas fa-suitcase"></i></span>',
-      '          <span class="st-nav__brand-copy">',
+      '            <span class="st-nav__brand-icon"><img src="assets/images/bharat-guide.svg" alt="Bharat Guide Logo"></span><span class="st-nav__brand-copy">',
       '            <span class="st-nav__brand-name">' + escapeHtml(state.config.brandName) + "</span>",
       '            <span class="st-nav__brand-tagline">' + escapeHtml(state.config.brandTagline) + "</span>",
       "          </span>",
@@ -237,7 +236,7 @@
       '      <div data-st-sidebar-auth></div>',
       "    </nav>",
       '    <div class="st-sidebar__footer">',
-      "      Smart Trip universal navbar. Naye pages par bhi isi component ko reuse karein.",
+      "      Bharat Guide universal navbar. Naye pages par bhi isi component ko reuse karein.",
       "    </div>",
       "  </aside>",
       "</div>",

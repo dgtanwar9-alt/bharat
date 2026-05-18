@@ -1,7 +1,7 @@
 {
   "name": "smart-trip-jaipur-backend",
   "version": "1.0.0",
-  "description": "Backend API for the Smart Trip Jaipur website",
+  "description": "Backend API for the Bharat Guide Jaipur website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

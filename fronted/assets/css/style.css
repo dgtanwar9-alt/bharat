@@ -5,6 +5,7 @@
 @import url('./destinations.css');
 @import url('./auth.css');
 @import url('./footer.css');
+@import url('./home.css');
 
     /* ============================================================
        NAVBAR
@@ -184,7 +185,7 @@
     }
 
     /* ============================================================
-       FEATURE 1: SMART TRIP PLANNER
+       FEATURE 1: BHARAT GUIDE PLANNER
     ============================================================ */
     /* SECTION: Trip Planner */
     #planner { background: linear-gradient(180deg, var(--bg-primary) 0%, #080c18 100%); }

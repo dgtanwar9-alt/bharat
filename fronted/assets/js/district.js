@@ -4,7 +4,7 @@ const districtStates = {
             label: 'Discover Rajasthan',
             title: 'Rajasthan Travel Guide',
             subtitle: 'Explore the top Rajasthan destinations every tourist loves, followed by quieter hidden gems in the state.',
-            heroImg: 'https://images.unsplash.com/photo-1599661046827-dacde6976548?q=80&w=1600&auto=format&fit=crop'
+            heroImg: 'https://plus.unsplash.com/premium_photo-1661962388409-eb7a041606fb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
         topSubtitle: '20 must-visit spots where most tourists begin their Rajasthan journey.',
         moreSubtitle: 'Lesser-known gems for the traveler who wants to dig deeper into Rajasthan.',
@@ -312,7 +312,7 @@ async function getStateData() {
 
 async function renderDistrictPage() {
     const pageData = await getStateData();
-    const pageTitle = `${pageData.header.title} | Smart Trip`;
+    const pageTitle = `${pageData.header.title} | Bharat Guide`;
     if (document.title !== pageTitle) {
         document.title = pageTitle;
     }

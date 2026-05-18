@@ -1,6 +1,6 @@
 /*
  * ============================================================
- * SMART TRIP - CITY PAGE LIGHT THEME
+ * BHARAT GUIDE - CITY PAGE LIGHT THEME
  * ============================================================
  *
  * This file only changes visuals.
@@ -14,7 +14,7 @@
  */
 
 :root {
-  --city-page-bg: #ffffff;
+  --city-page-bg: #ffffffd4;
   --city-surface: #ffffff;
   --city-surface-soft: #f8fbff;
   --city-ink: #10223b;
@@ -52,7 +52,7 @@ body {
 }
 
 #city-root #cityHero.hero-v3 {
-  height: 76vh !important;
+  height: 70vh !important;
   min-height: 620px !important;
   padding-top: 92px !important;
 }
