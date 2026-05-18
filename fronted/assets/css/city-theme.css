@@ -16,12 +16,12 @@
 :root {
   --city-page-bg: #ffffffd4;
   --city-surface: #ffffff;
-  --city-surface-soft: #f8fbff;
-  --city-ink: #10223b;
+  --city-surface-soft: #d3d629;
+  --city-ink: #022b08cb;
   --city-muted: #64748b;
-  --city-border: #dbe7f4;
+  --city-border: #5f738960;
   --city-accent: #ff7a18;
-  --city-accent-2: #0f9b8e;
+  --city-accent-2: #304b49;
   --city-accent-3: #2563eb;
   --city-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
 }
