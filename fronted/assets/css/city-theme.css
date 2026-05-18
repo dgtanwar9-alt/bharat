@@ -657,4 +657,88 @@ body {
   #city-root .city-panel {
     min-height: auto !important;
   }
+
+  #city-root .hero-tags {
+    width: 100% !important;
+  }
+
+  #city-root .city-stat-grid,
+  #city-root .planner-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #city-root .city-hero-actions,
+  #city-root .planner-actions,
+  #city-root .itinerary-header,
+  #city-root .hotel-footer,
+  #city-root .food-meta,
+  #city-root .transport-cost,
+  #city-root .activity {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  #city-root .city-hero-actions .btn-gold,
+  #city-root .city-hero-actions .btn-outline,
+  #city-root .planner-actions .btn-gold,
+  #city-root .planner-actions .btn-outline {
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+  }
+
+  #city-root .food-tabs {
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    max-width: 100% !important;
+  }
+
+  #city-root .food-tab {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+
+  #city-root .planner-card,
+  #city-root .city-panel,
+  #city-root .city-tip-card,
+  #city-root .day-card,
+  #city-root #itinerary-result {
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  #city-root section:not(.hero-v3) {
+    padding: 36px 0 !important;
+  }
+
+  #city-root #cityHero.hero-v3 {
+    min-height: auto !important;
+    padding-top: 92px !important;
+  }
+
+  #city-root .section-title {
+    font-size: clamp(26px, 10vw, 34px) !important;
+  }
+
+  #city-root .city-panel-copy,
+  #city-root .city-tip-text,
+  #city-root .transport-details,
+  #city-root .attraction-desc,
+  #city-root .food-desc {
+    font-size: 14px !important;
+  }
+
+  #city-root .city-stat-card,
+  #city-root .planner-card,
+  #city-root .city-panel,
+  #city-root .city-tip-card,
+  #city-root .attraction-body,
+  #city-root .hotel-body,
+  #city-root .food-body,
+  #city-root .transport-card,
+  #city-root .day-card,
+  #city-root #itinerary-result {
+    padding: 18px !important;
+  }
 }

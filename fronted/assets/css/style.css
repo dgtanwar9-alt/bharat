@@ -757,3 +757,100 @@
     }
     .newsletter-input::placeholder { color: var(--text-muted); }
     .newsletter-input:focus { outline: none; border-color: var(--gold); }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 72px 0;
+      }
+
+      .container {
+        padding: 0 18px;
+      }
+
+      .planner-card,
+      #itinerary-result,
+      .newsletter-card {
+        padding: 24px 18px;
+      }
+
+      .planner-actions,
+      .itinerary-header,
+      .hotel-footer,
+      .food-meta,
+      .transport-cost,
+      .gem-footer,
+      .deal-pricing {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .planner-actions .btn-gold,
+      .planner-actions .btn-outline {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .activity {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .activity-time {
+        min-width: 0;
+      }
+
+      .food-tabs {
+        overflow-x: auto;
+        max-width: 100%;
+        justify-content: flex-start;
+      }
+
+      .food-tab {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+
+      .newsletter-card {
+        padding: 42px 20px;
+      }
+
+      .section-sub {
+        margin-bottom: 32px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .section-title {
+        font-size: clamp(26px, 10vw, 36px);
+      }
+
+      .planner-card,
+      #itinerary-result {
+        padding: 20px 16px;
+      }
+
+      .day-card,
+      .review-card,
+      .transport-card,
+      .deal-body,
+      .hotel-body,
+      .food-body,
+      .itin-body,
+      .gem-body {
+        padding: 18px;
+      }
+
+      .btn-gold,
+      .btn-outline {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .newsletter-input {
+        padding: 14px 20px;
+      }
+    }

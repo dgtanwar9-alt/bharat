@@ -87,6 +87,7 @@ body {
 #district-header h1 {
   color: var(--district-ink) !important;
   font-family: 'Cinzel', serif;
+  font-size: clamp(30px, 5vw, 42px) !important;
 }
 
 #district-header p {
@@ -220,6 +221,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  #top-places .section-title-row,
+  #more-places .section-title-row {
+    padding: 18px 16px;
+    border-radius: 20px;
+  }
+
   #top-places .dest-grid-row,
   #more-places .dest-grid-row {
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)) !important;
@@ -249,17 +256,28 @@ body {
 }
 
 @media (max-width: 520px) {
+  #district-header {
+    margin-top: 92px;
+  }
+
   #district-header > div {
     padding: 24px 16px !important;
+    border-radius: 20px;
+  }
+
+  #top-places .section-title-row,
+  #more-places .section-title-row {
+    padding: 16px 14px;
+    border-radius: 18px;
   }
 
   #top-places .dest-grid-row,
   #more-places .dest-grid-row {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr !important;
   }
 
   #top-places .dest-card-v2,
   #more-places .dest-card-v2 {
-    height: 190px !important;
+    height: 220px !important;
   }
 }
