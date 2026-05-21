@@ -1,7 +1,7 @@
 
 @import url('navbar.css');
 @import url('footer.css');
-:root {
+root {
   --primary: #5c59f0;
   --secondary: #f4a261;
   --dark: #0a0a12;
