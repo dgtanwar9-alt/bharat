@@ -29,7 +29,7 @@ const apiLimiter = rateLimit({
 });
 
 // Apply CORS with configurable origins (allow local dev)
-const allowedOrigins = (process.env.CORS_ORIGIN || "https://bharat-peach.vercel.app, http://localhost:3000").split(/,\s*/);
+const allowedOrigins = (process.env.CORS_ORIGIN || "https://bharat-india.vercel.app, http://localhost:3000").split(/,\s*/);
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
