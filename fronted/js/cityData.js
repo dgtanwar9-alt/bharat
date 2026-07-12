@@ -1525,7 +1525,7 @@ Object.assign(cityData, {
     state: "Rajasthan",
     aliases: ["lake city", "city of lakes", "udaipur city"],
     description: "Udaipur layers lakeside sunsets, palace balconies, boat rides and whitewashed heritage streets into Rajasthan's most romantic and easygoing city break.",
-    heroImage: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://lh3.googleusercontent.com/gpms-cs-s/ABJJf50Vd8p8swRa-NQCcX0p2KX3h-6BbKjtlrYjEcGMBhYclCJAnvk-CO0cpyAPoh9V9yCpXFPJuItXt_OQfMHR6hyqkgR2tcBOV6NWmFV1djZmOE1KedF47QTYOgQV7V7iv1ERtqMLtg=s1360-w1360-h1020-rw",
     heroHighlights: ["Lake Pichola", "City Palace", "Sunset points"],
     spotlight: "Udaipur works best when you combine one palace half-day, one lake evening and a slower café or market window between heritage stops.",
     bestFor: ["Couples", "Photography trips", "Palace stays", "Relaxed 2-3 day trips"],

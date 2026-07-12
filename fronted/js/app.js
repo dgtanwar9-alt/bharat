@@ -9,7 +9,7 @@
  * 4. This file auto-builds the page, dropdown, filters and itinerary UI.
  */
 
-const DEFAULT_HERO_IMAGE = 'https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1600&auto=format&fit=crop';
+const DEFAULT_HERO_IMAGE = '';
 
 let selectedType = 'Solo';
 

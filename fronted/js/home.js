@@ -96,12 +96,156 @@
         "https://images.unsplash.com/photo-1759738096744-853e689cfe66?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
+      name: "Haryana",
+      slug: "haryana",
+      tagline: "Land of Monuments",
+      imageUrl:
+        "https://haryanatourism.gov.in/wp-content/uploads/2024/07/bhawani_pic1.jpg",
+    },
+    {
       name: "Andhra Pradesh",
       slug: "andhra-pradesh",
       tagline: "Temple & Coast",
       imageUrl:
         "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?q=80&w=2308&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+
+{
+  name: "Bihar",
+  slug: "bihar",
+  tagline: "Land of Enlightenment",
+  imageUrl:
+    "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGq_SuIaYTgKW0AY1btp0yFZAvAvF07iZb91_M1VGzVpOwhynn0UwSaCfiumkDb3V1rj3rCJ8VOYVeADmpfJlm0YGqbDw_WKaIgswK02xbsCA8_eMoj7kcC2EyAnnh6MhsoJXwOuLWqKjsK=s1360-w1360-h1020-rw",
+},
+{
+  name: "Chhattisgarh",
+  slug: "chhattisgarh",
+  tagline: "Land of Waterfalls",
+  imageUrl:
+    "https://images.unsplash.com/photo-1590766940554-634a7ed41450?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Jharkhand",
+  slug: "jharkhand",
+  tagline: "Land of Forests",
+  imageUrl:
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Manipur",
+  slug: "manipur",
+  tagline: "Jewel of India",
+  imageUrl:
+    "https://images.unsplash.com/photo-1627894483216-2138af692e32?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Meghalaya",
+  slug: "meghalaya",
+  tagline: "Abode of Clouds",
+  imageUrl:
+    "https://images.unsplash.com/photo-1571679654681-ba01b9e1e117?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Mizoram",
+  slug: "mizoram",
+  tagline: "Land of Blue Mountains",
+  imageUrl:
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Nagaland",
+  slug: "nagaland",
+  tagline: "Land of Festivals",
+  imageUrl:
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Odisha",
+  slug: "odisha",
+  tagline: "India's Best Kept Secret",
+  imageUrl:
+    "https://images.unsplash.com/photo-1590766940554-634a7ed41450?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Punjab",
+  slug: "punjab",
+  tagline: "Land of Five Rivers",
+  imageUrl:
+    "https://images.unsplash.com/photo-1588096344356-9b497caeeb64?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Sikkim",
+  slug: "sikkim",
+  tagline: "Himalayan Paradise",
+  imageUrl:
+    "https://images.unsplash.com/photo-1571679654681-ba01b9e1e117?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Telangana",
+  slug: "telangana",
+  tagline: "Land of Pearls",
+  imageUrl:
+    "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "West Bengal",
+  slug: "west-bengal",
+  tagline: "Sweetest Part of India",
+  imageUrl:
+    "https://images.unsplash.com/photo-1558431382-27e303142255?q=80&w=1200&auto=format&fit=crop",
+},
+
+// UNION TERRITORIES
+
+{
+  name: "Andaman and Nicobar Islands",
+  slug: "andaman-and-nicobar-islands",
+  tagline: "Tropical Island Paradise",
+  imageUrl:
+    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Chandigarh",
+  slug: "chandigarh",
+  tagline: "The City Beautiful",
+  imageUrl:
+    "https://images.unsplash.com/photo-1590766940554-634a7ed41450?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Dadra and Nagar Haveli and Daman and Diu",
+  slug: "dadra-nagar-haveli-daman-diu",
+  tagline: "Coastal Heritage Escape",
+  imageUrl:
+    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Jammu and Kashmir",
+  slug: "jammu-and-kashmir",
+  tagline: "Paradise on Earth",
+  imageUrl:
+    "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Ladakh",
+  slug: "ladakh",
+  tagline: "Land of High Passes",
+  imageUrl:
+    "https://images.unsplash.com/photo-1536295243470-d7cba4efab7b?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Lakshadweep",
+  slug: "lakshadweep",
+  tagline: "Coral Island Paradise",
+  imageUrl:
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+},
+{
+  name: "Puducherry",
+  slug: "puducherry",
+  tagline: "The French Riviera of the East",
+  imageUrl:
+    "https://images.unsplash.com/photo-1597073642928-48c0971f7ded?q=80&w=1200&auto=format&fit=crop",
+},
   ];
 
   const statesGrid = document.getElementById("states-grid");
