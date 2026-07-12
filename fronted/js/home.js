@@ -65,7 +65,7 @@
       slug: "madhya-pradesh",
       tagline: "Heart of India",
       imageUrl:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1000&auto=format&fit=crop",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/f3/f9/88/maheshwar-fort-maheshwar.jpg?w=2400&h=-1&s=1",
     },
     {
       name: "Tamil Nadu",

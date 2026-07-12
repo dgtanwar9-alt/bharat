@@ -31,7 +31,7 @@ Object.assign(cityData, {
       "Bhopal is the capital of Madhya Pradesh and a major tourism hub known for lakes, museums, historic mosques, royal heritage, cultural institutions and nearby archaeological attractions.",
 
     heroImage:
-      "https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1600&auto=format&fit=crop",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/0b/dc/65.jpg",
 
     heroHighlights: [
       "City of Lakes",
@@ -589,7 +589,7 @@ Object.assign(cityData, {
       "Indore is Madhya Pradesh's largest city and a major tourism hub known for Holkar heritage, palaces, temples, markets, waterfalls and legendary street food.",
 
     heroImage:
-      "https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1600&auto=format&fit=crop",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/16/0a/83/rajwada-indore.jpg?w=1100&h=600&s=1",
 
     heroHighlights: [
       "Holkar heritage",
@@ -1072,7 +1072,7 @@ Object.assign(cityData, {
       "Ujjain is one of India's most important pilgrimage cities, known for Mahakaleshwar Jyotirlinga, the Shipra River, ancient temples, astronomical heritage and the Simhastha Kumbh tradition.",
 
     heroImage:
-      "https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=1600&auto=format&fit=crop",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/18/4f/3f/img-20181019-142940817.jpg?w=1000&h=-1&s=1",
 
     heroHighlights: [
       "Mahakaleshwar Jyotirlinga",
@@ -1503,7 +1503,7 @@ Object.assign(cityData, {
       "Gwalior is one of Madhya Pradesh's most important heritage cities, known for its massive hill fort, royal palaces, ancient temples, museums, music traditions and historic architecture.",
 
     heroImage:
-      "https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=1600&auto=format&fit=crop",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/eb/72/f2/the-tomb-of-mohammad.jpg?w=2400&h=-1&s=1",
 
     heroHighlights: [
       "Gwalior Fort",
@@ -1956,7 +1956,7 @@ Object.assign(cityData, {
       "Neemuch is a historic city in northwestern Madhya Pradesh known for its military heritage, agricultural markets, temples, nearby waterfalls, natural landscapes and convenient access to important attractions around Neemuch district and the Rajasthan border region.",
 
     heroImage:
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1600&auto=format&fit=crop",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4c/18/e6/beauty-of-gandhisagar.jpg?w=1400&h=-1&s=1",
 
     heroHighlights: [
       "Historic cantonment city",
@@ -2146,123 +2146,139 @@ Object.assign(cityData, {
       }
     ],
 
-    attractions: [
-      {
-        name: "CRPF Birth Place Memorial",
-        type: "Historic Landmark",
-        icon: "🇮🇳",
-        rating: "4.6",
-        time: "1-2 hrs",
+    
 
-        desc:
-          "A historically important site associated with the origins and institutional history of the Central Reserve Police Force in Neemuch.",
+attractions: [
+  {
+    name: "CRPF Birth Place Memorial",
+    type: "Historic Landmark",
+    icon: "🇮🇳",
+    rating: "4.6",
+    time: "1-2 hrs",
 
-        bg:
-          "linear-gradient(135deg,#334155,#0f172a)",
+    image:
+      "https://www.justdial.com/Neemuch/Rtc-Crpf-Neemuch-Neemuch-Chawni/9999P7423-7423-181208213039-A1I3_BZDET/photos",
 
-        link:
-          "https://www.google.com/maps/search/CRPF+Birth+Place+Neemuch",
+    desc:
+      "A historically important site associated with the origins and institutional history of the Central Reserve Police Force in Neemuch.",
 
-        history:
-          "Neemuch has an important military and cantonment history and is closely associated with the origins of the Crown Representative's Police, which later became the Central Reserve Police Force.",
+    bg:
+      "linear-gradient(135deg,#334155,#0f172a)",
 
-        bestTime:
-          "Morning or afternoon",
+    link:
+      "https://www.google.com/maps/search/CRPF+Birth+Place+Neemuch",
 
-        ticketInfo:
-          "Check latest visitor access and entry requirements",
+    history:
+      "Neemuch has an important military and cantonment history and is closely associated with the origins of the Crown Representative's Police, which later became the Central Reserve Police Force.",
 
-        highlights:
-          "Military history, CRPF heritage and national importance"
-      },
+    bestTime:
+      "Morning or afternoon",
 
-      {
-        name: "Nava Toran Temple",
-        type: "Historic Temple",
-        icon: "🛕",
-        rating: "4.6",
-        time: "1-2 hrs",
+    ticketInfo:
+      "Check latest visitor access and entry requirements",
 
-        desc:
-          "A historic temple site at Khor known for its ancient architectural remains, decorative stone carvings and archaeological importance.",
+    highlights:
+      "Military history, CRPF heritage and national importance"
+  },
 
-        bg:
-          "linear-gradient(135deg,#b45309,#7c2d12)",
+  {
+    name: "Nava Toran Temple",
+    type: "Historic Temple",
+    icon: "🛕",
+    rating: "4.6",
+    time: "1-2 hrs",
 
-        link:
-          "https://www.google.com/maps/search/Nava+Toran+Temple+Khor+Neemuch",
+    image:
+      "https://lh3.googleusercontent.com/pw/AMWts8DbWxzc3myn4EiLY-tD35GyYWvpruAqElCuG_kZm-xHY70MnzW8nAnCgAcz4TPf6XU-auw6bL5nKlkMS19-dA_DtD2pQUQA5NfQTTEBoJk4mpA7UPrDDGByg4bFrIBZgm4eUIl1tshoGhdjA7kxwtRa=w2624-h1970-no?authuser=0",
 
-        history:
-          "Nava Toran is an important historic monument of the Neemuch region and is recognized for its surviving ornamental arches, carved stone structures and medieval architectural character.",
+    desc:
+      "A historic temple site at Khor known for its ancient architectural remains, decorative stone carvings and archaeological importance.",
 
-        bestTime:
-          "Morning or late afternoon",
+    bg:
+      "linear-gradient(135deg,#b45309,#7c2d12)",
 
-        ticketInfo:
-          "Check latest local entry information",
+    link:
+      "https://www.google.com/maps/search/Nava+Toran+Temple+Khor+Neemuch",
 
-        highlights:
-          "Ancient architecture, stone carvings and photography"
-      },
+    history:
+      "Nava Toran is an important historic monument of the Neemuch region and is recognized for its surviving ornamental arches, carved stone structures and medieval architectural character.",
 
-      {
-        name: "Bhadwa Mata Temple",
-        type: "Temple",
-        icon: "🙏",
-        rating: "4.7",
-        time: "2-3 hrs",
+    bestTime:
+      "Morning or late afternoon",
 
-        desc:
-          "A popular religious destination in Neemuch district visited by devotees and travellers interested in the spiritual traditions of the region.",
+    ticketInfo:
+      "Check latest local entry information",
 
-        bg:
-          "linear-gradient(135deg,#ea580c,#7c2d12)",
+    highlights:
+      "Ancient architecture, stone carvings and photography"
+  },
 
-        link:
-          "https://www.google.com/maps/search/Bhadwa+Mata+Temple+Neemuch",
+  {
+    name: "Bhadwa Mata Temple",
+    type: "Temple",
+    icon: "🙏",
+    rating: "4.7",
+    time: "2-3 hrs",
 
-        history:
-          "Bhadwa Mata Temple is an important centre of local faith and attracts devotees from Neemuch and surrounding regions, especially during festivals and religious occasions.",
+    image:
+      "https://newandolder.com/wp-content/uploads/2025/12/bhadwa-mata-mandir-neemuch.jpg",
 
-        bestTime:
-          "Morning or evening",
+    desc:
+      "A popular religious destination in Neemuch district visited by devotees and travellers interested in the spiritual traditions of the region.",
 
-        ticketInfo:
-          "Free temple entry",
+    bg:
+      "linear-gradient(135deg,#ea580c,#7c2d12)",
 
-        highlights:
-          "Religious atmosphere, local traditions and pilgrimage"
-      },
+    link:
+      "https://www.google.com/maps/search/Bhadwa+Mata+Temple+Neemuch",
 
-      {
-        name: "Sukhanand Dham",
-        type: "Religious and Natural Attraction",
-        icon: "🌿",
-        rating: "4.6",
-        time: "3-4 hrs",
+    history:
+      "Bhadwa Mata Temple is an important centre of local faith and attracts devotees from Neemuch and surrounding regions, especially during festivals and religious occasions.",
 
-        desc:
-          "A peaceful religious and natural attraction in Neemuch district known for its temple setting, rocky landscape, natural surroundings and seasonal water features.",
+    bestTime:
+      "Morning or evening",
 
-        bg:
-          "linear-gradient(135deg,#166534,#052e16)",
+    ticketInfo:
+      "Free temple entry",
 
-        link:
-          "https://www.google.com/maps/search/Sukhanand+Dham+Neemuch",
+    highlights:
+      "Religious atmosphere, local traditions and pilgrimage"
+  },
 
-        history:
-          "Sukhanand Dham has religious importance in the Neemuch region and is associated with local spiritual traditions while also attracting visitors because of its natural setting.",
+  {
+    name: "Sukhanand Dham",
+    type: "Religious and Natural Attraction",
+    icon: "🌿",
+    rating: "4.6",
+    time: "3-4 hrs",
 
-        bestTime:
-          "Monsoon to winter",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/25/cc/48/sukhanandji-temple.jpg?w=1100&h=-1&s=1",
 
-        ticketInfo:
-          "Free general access areas",
+    desc:
+      "A peaceful religious and natural attraction in Neemuch district known for its temple setting, rocky landscape, natural surroundings and seasonal water features.",
 
-        highlights:
-          "Temple, natural landscape, peaceful atmosphere and photography"
-      }
-    ],
+    bg:
+      "linear-gradient(135deg,#166534,#052e16)",
+
+    link:
+      "https://www.google.com/maps/search/Sukhanand+Dham+Neemuch",
+
+    history:
+      "Sukhanand Dham has religious importance in the Neemuch region and is associated with local spiritual traditions while also attracting visitors because of its natural setting.",
+
+    bestTime:
+      "Monsoon to winter",
+
+    ticketInfo:
+      "Free general access areas",
+
+    highlights:
+      "Temple, natural landscape, peaceful atmosphere and photography"
+  }
+],
+
+
 
     itineraries: {
 
